@@ -1,28 +1,19 @@
-// Global CSS File
+// Components
 
+import Header from './components/layout/Header';
+
+// Global CSS File
 import './theme.css';
 
 // Font Awesome Icons
 
-import { FaBeer } from 'react-icons/fa';
+
+import nyc_bubble from './images/nyc-bubble-logo.svg' // relative path to image
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>Lets go for a <FaBeer />?</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        Hello, Carl
-        </a>
-      </header>
+      <Header cool={nyc_bubble} />
     </div>
   );
 }
