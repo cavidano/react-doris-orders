@@ -1,69 +1,71 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import { FaBars } from "react-icons/fa";
 import { FaLanguage } from "react-icons/fa";
 
-export class Header extends Component {
+class Header extends Component {
 
     static defaultProps = {
-        cool: "Whoa!!!"
+        title: "Whoa!!!"
     }
     
     render() {
         return (
-            <div>
+            <Fragment>
 
-<header id="global-header">
+                <header id="global-header">
+                    
+                    <a className="sr-only sr-only-focusable skip-menu" href="#skip-header-content">Skip Header</a>
 
-<div className="bg-dark text-white" id="nyc-top-header">
+                    <div className="bg-dark text-white" id="nyc-top-header">
 
-    <div className="container-fluid wide">
+                        <div className="container-fluid wide">
 
-        <div className="row py-1 align-items-center justify-content-between">
+                            <div className="row py-1 align-items-center justify-content-between">
 
-            <div className="col-auto">
-                <p className="d-none d-md-flex fs-md">
-                    <a className="text-reset" href="https://www1.nyc.gov/">
-                        <strong>nyc.gov</strong>
-                    </a>
-                    <span className="mx-1" aria-hidden="true">|</span>
-                    Department of Records
-                </p>
-            </div>
+                                <div className="col-auto">
+                                    <p className="d-none d-md-flex fs-md">
+                                        <a className="text-reset" href="https://www1.nyc.gov/">
+                                            <strong>nyc.gov</strong>
+                                        </a>
+                                        <span className="mx-1" aria-hidden="true">|</span>
+                                        Department of Records
+                                    </p>
+                                </div>
 
-            <div className="col-auto">
+                                <div className="col-auto">
 
-                <ul className="extensible-list horizontal fs-md">
-                    <li>
-                        <a className="text-reset" href="http://www1.nyc.gov/">
-                            <strong>
-                                311
-                            </strong>
-                        </a>
-                    </li>
-                    <li>
-                        <a className="text-reset" href="http://www1.nyc.gov/home/search/index.page">
-                            <strong>
-                                Search all NYC.gov
-                            </strong>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www1.nyc.gov/" title="Go to nyc.gov">
-                            <img className="d-block" src={this.props.cool} width="45" alt="NYC Logo" />
-                        </a>
-                    </li>
-                </ul>
+                                    <ul className="extensible-list horizontal fs-md">
+                                        <li>
+                                            <a className="text-reset" href="http://www1.nyc.gov/">
+                                                <strong>
+                                                    311
+                                                </strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a className="text-reset" href="http://www1.nyc.gov/home/search/index.page">
+                                                <strong>
+                                                    Search all NYC.gov
+                                                </strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www1.nyc.gov/" title="Go to nyc.gov">
+                                                <img className="d-block" src={this.props.title} width="45" alt="NYC Logo" />
+                                            </a>
+                                        </li>
+                                    </ul>
 
-            </div>
+                                </div>
 
-        </div>
+                            </div>
 
-    </div>
+                        </div>
 
-</div>
+                    </div>
 
-<div className="wrap-header">
+    <div className="wrap-header">
 
     <div className="container-fluid wide">
 
@@ -173,7 +175,7 @@ export class Header extends Component {
 
 </header>
                 
-            </div>
+            </Fragment>
         )
     }
 }
