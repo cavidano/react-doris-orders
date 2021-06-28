@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 
 class Form extends Component {
+
     render() {
+
+        state = {
+            empty: true
+        }
+        
         return (
             <form className="needs-validation" action="" noValidate>
 
