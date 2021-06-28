@@ -13,7 +13,7 @@ const BasicInfo = (props) => {
                 </p>
                 
             </div>
-=
+
             <div className="form-group" aria-labelledby="select-record-type">
                             
                 <p className="label" id="select-record-type">
