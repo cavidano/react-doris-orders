@@ -1,23 +1,21 @@
 // Components
 
-import Header from './components/Header/Header';
-import PageTitle from './components/PageTitle/PageTitle';
-import Form from './components/Form/Form';
-import Footer from './components/Footer/Footer';
+import Header from './components/Header';
+import PageTitle from './components/PageTitle';
+import Form from './components/Form';
+import Footer from './components/Footer';
 
 // Global CSS File
 import './theme.css';
 
 // Font Awesome Icons
 
-import nyc_bubble from './images/nyc-bubble-logo.svg' // relative path to image
-
 function App() {
 
   return (
     <div className="App">
 
-      <Header cool={nyc_bubble} />
+      <Header />
     
       <main id="skip-header-content">
 
@@ -27,13 +25,11 @@ function App() {
 
             <div className="row">
 
-
                 <div className="col-lg-9 overflow-hidden" id="primary-content">
 
                     <Form />
 
                 </div>
-                
                     
                 <div className="col-lg-3 border-left">
                     

@@ -137,9 +137,9 @@ class Footer extends Component {
                                 NYC is a trademark and service mark of the City of New York.
                             </p>
     
-                            <a className="text-reset fs-sm" href="#" id="back-to-top">
+                            <button className="no-btn-style fs-sm" id="back-to-top">
                                 Back to Top
-                            </a>
+                            </button>
     
                         </div>
                         
