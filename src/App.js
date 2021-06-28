@@ -1,8 +1,9 @@
 // Components
 
-import Header from './components/layout/Header';
-import PageTitle from './components/layout/PageTitle';
-import Form from './components/functionality/Form';
+import Header from './components/Header/Header';
+import PageTitle from './components/PageTitle/PageTitle';
+import Form from './components/Form/Form';
+import Footer from './components/Footer/Footer';
 
 // Global CSS File
 import './theme.css';
@@ -22,7 +23,7 @@ function App() {
 
         <PageTitle />
 
-        <div className="container-fluid wide needs-validation" novalidate>
+        <div className="container-fluid wide">
 
             <div className="row">
 
@@ -120,6 +121,8 @@ function App() {
         </div>
         
       </main>
+
+      <Footer />
       
     </div>
   );

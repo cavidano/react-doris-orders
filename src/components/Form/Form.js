@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-export class Form extends Component {
+class Form extends Component {
     render() {
         return (
-            <form action="">
+            <form className="needs-validation" action="" noValidate>
 
                 <div className="text-right py-1 border-bottom my-2 narrow text-right">
                     <p>
@@ -91,9 +91,9 @@ export class Form extends Component {
                     </div>
                     
                 
-                    <button class="btn btn-lg btn-block btn-primary rounded my-5" type="submit">
-                                <span class="title">Add to Cart</span>
-                            </button>
+                    <button className="btn btn-lg btn-block btn-primary rounded my-5" type="submit">
+                        <span className="title">Add to Cart</span>
+                    </button>
                 
                 </div>
 
