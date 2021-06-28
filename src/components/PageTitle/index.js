@@ -1,24 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class PageTitle extends Component {
+const PageTitle = ({ title }) => {
 
-    static defaultProps = {
-        title: 'Order Vital Records'
-    }
-
-    render() {
-        return (
+    return (
         <div className="bg-primary py-4">
 
             <div className="container text-center">
                 <h1 className="display-3 text-white">
-                    {this.props.title}
+                    {title}
                 </h1>
             </div>
 
         </div>
-        )
-    }
+    );
+}
+
+PageTitle.defaultProps = {
+    title: 'Order Vital Records'
 }
 
 export default PageTitle;

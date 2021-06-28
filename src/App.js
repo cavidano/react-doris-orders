@@ -5,6 +5,8 @@ import PageTitle from './components/PageTitle';
 import Form from './components/Form';
 import Footer from './components/Footer';
 
+import OrderSidebar from './components/OrderDetails/OrderSidebar';
+
 // Global CSS File
 import './theme.css';
 

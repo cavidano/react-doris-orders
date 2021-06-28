@@ -12,7 +12,7 @@ class Form extends Component {
 
                 <div className="text-right py-1 border-bottom my-2 narrow text-right">
                     <p>
-                        <span className="text-danger" aria-hidden="true">*</span>
+                        <span className="text-danger mx-1" aria-hidden="true">*</span>
                         <span className="text-muted fs-md">
                             Required Fields
                         </span>
@@ -98,7 +98,6 @@ class Form extends Component {
                 </div>
 
                 <ButtonSubmit disabled="false" />
-
 
             </form>
         )
