@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 
+import ButtonSubmit from './ButtonSubmit';
+
 class Form extends Component {
 
     render() {
 
-        state = {
-            empty: true
-        }
-        
         return (
+
             <form className="needs-validation" action="" noValidate>
 
                 <div className="text-right py-1 border-bottom my-2 narrow text-right">
@@ -96,12 +95,9 @@ class Form extends Component {
                         
                     </div>
                     
-                
-                    <button className="btn btn-lg btn-block btn-primary rounded my-5" type="submit">
-                        <span className="title">Add to Cart</span>
-                    </button>
-                
                 </div>
+
+                <ButtonSubmit disabled="false" />
 
 
             </form>
