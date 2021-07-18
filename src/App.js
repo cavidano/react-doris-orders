@@ -14,11 +14,11 @@ function App() {
   return (
     <div className="App">
 
-      <Header />
+      <Header agencyName="Department of Records" />
     
       <main id="skip-header-content">
 
-        <PageTitle />
+        <PageTitle title="Order Vital Records" />
 
         <div className="container-fluid wide">
 

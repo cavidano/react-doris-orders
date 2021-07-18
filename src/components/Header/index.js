@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 
 const Header = (props) => {
 
@@ -44,7 +45,8 @@ const Header = (props) => {
             </g>
         
         </svg>
-    )
+    );
+
     return (
         <Fragment>
             <header id="global-header">
@@ -63,7 +65,7 @@ const Header = (props) => {
                                         <strong>nyc.gov</strong>
                                     </a>
                                     <span className="mx-1" aria-hidden="true">|</span>
-                                    Department of Records
+                                    {props.agencyName}
                                 </p>
                             </div>
 
@@ -175,7 +177,11 @@ const Header = (props) => {
 }
 
 Header.defaultProps = {
-    title: "This is a title"
+    agencyName: "NYC Agency"
+}
+
+Header.propTypes = {
+    agencyName: PropTypes.string.isRequired,
 }
 
 export default Header;

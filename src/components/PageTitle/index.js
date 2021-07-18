@@ -1,13 +1,13 @@
 import React from 'react';
 
-const PageTitle = ({ title }) => {
+const PageTitle = (props) => {
 
     return (
         <div className="bg-primary py-4">
 
             <div className="container text-center">
                 <h1 className="display-3 text-white">
-                    {title}
+                    {props.title}
                 </h1>
             </div>
 
@@ -16,7 +16,7 @@ const PageTitle = ({ title }) => {
 }
 
 PageTitle.defaultProps = {
-    title: 'Order Vital Records'
+    title: 'Page Title'
 }
 
 export default PageTitle;
