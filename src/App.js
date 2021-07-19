@@ -7,8 +7,9 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import PageTitle from './components/PageTitle/PageTitle';
 import Form from './components/Form';
-import CartCheckout from './components/Cart/Cart';
+import Cart from './components/Cart/Cart';
 import CartSidebar from './components/Cart/CartSidebar';
+import CartConfirm from './components/Cart/CartConfirm';
 
 // Global CSS File
 import './theme.css';
@@ -67,8 +68,17 @@ class App extends Component {
               <Route exact path="/cart" render={() => (
                 
                 <Fragment>
+                  <PageTitle title="Shopping Cart" />
+                  <Cart />
+                </Fragment>
+
+              )} />
+
+              <Route exact path="/confirm" render={() => (
+                
+                <Fragment>
                   <PageTitle title="Thank You" />
-                  <CartCheckout />
+                  <CartConfirm />
                 </Fragment>
 
               )} />
