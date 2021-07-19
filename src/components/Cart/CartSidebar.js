@@ -18,7 +18,7 @@ const CartSidebar = () => {
                 </p>
                 
                 <ul className="list-group list-group-flush mx-n2" id="order-detail-aside">
-                    
+    
                     <CartItem title="Birth Certificate" cost="18" />
                     <CartItem title="Marriage Certificate" cost="24" />
                     <CartItem title="Cool, Carl" cost="16" />

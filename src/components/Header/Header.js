@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const Header = (props) => {
@@ -146,16 +146,16 @@ const Header = (props) => {
 
                                         <ul className="extensible-list horizontal">
                                             <li>
-                                                <Link className="text-reset" to="/cart">Cart</Link>
+                                                <NavLink className="text-reset" to="/cart">Cart</NavLink>
                                             </li>
                                             <li>
-                                                <Link className="text-reset" to="/confirm">Confirm</Link>
+                                                <NavLink className="text-reset" to="/confirm">Confirm</NavLink>
                                             </li>
                                             <li>
                                                 <button className="no-btn-style" type="button" title="Language"
                                                     data-toggle="collapse" data-target="#global-language"
                                                     aria-controls="global-language" aria-expanded="false">
-                                                    <span class="fas fa-language fa-lg" role="img"></span>
+                                                    <span className="fas fa-language fa-lg" role="img"></span>
                                                 </button>
                                             </li>
                                         </ul>
