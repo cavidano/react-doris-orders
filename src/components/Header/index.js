@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const Header = (props) => {
@@ -49,6 +50,7 @@ const Header = (props) => {
 
     return (
         <Fragment>
+
             <header id="global-header">
                 
                 <a className="sr-only sr-only-focusable skip-menu" href="#skip-header-content">Skip Header</a>
@@ -73,14 +75,14 @@ const Header = (props) => {
 
                                 <ul className="extensible-list horizontal fs-md">
                                     <li>
-                                        <a className="text-reset" href="http://www1.nyc.gov/">
+                                        <a className="text-reset" href="https://portal.311.nyc.gov/" target="_blank">
                                             <strong>
                                                 311
                                             </strong>
                                         </a>
                                     </li>
                                     <li>
-                                        <a className="text-reset" href="http://www1.nyc.gov/home/search/index.page">
+                                        <a className="text-reset" href="http://www1.nyc.gov/home/search/index.page" target="_blank">
                                             <strong>
                                                 Search all NYC.gov
                                             </strong>
@@ -143,6 +145,12 @@ const Header = (props) => {
                                     <div className="col-auto">
 
                                         <ul className="extensible-list horizontal">
+                                            <li>
+                                                <Link className="text-reset" to="/cart">Cart</Link>
+                                            </li>
+                                            <li>
+                                                <Link className="text-reset" to="/checkout">Checkout</Link>
+                                            </li>
                                             <li>
                                                 <button className="no-btn-style" type="button" title="Language"
                                                     data-toggle="collapse" data-target="#global-language"

@@ -8,15 +8,14 @@ import Footer from './components/Footer';
 import PageTitle from './components/PageTitle';
 import Form from './components/Form';
 import CartSidebar from './components/Cart/CartSidebar';
+import CartCheckout from './components/Cart/CartCheckout';
 
 // Global CSS File
 import './theme.css';
 
 class App extends Component {
 
-  async componentDidMount() {
-
-  }
+  // async componentDidMount() {}
 
   render(){
     
@@ -67,7 +66,10 @@ class App extends Component {
             
               <Route exact path="/cart" render={(props) => (
                 
-                <PageTitle title="Cool Cart" />
+                <Fragment>
+                  <PageTitle title="Cool Cart" />
+                  <CartCheckout />
+                </Fragment>
 
               )} />
               
