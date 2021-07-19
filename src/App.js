@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Components
 
-import Header from './components/Header';
-import Footer from './components/Footer';
-import PageTitle from './components/PageTitle';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import PageTitle from './components/PageTitle/PageTitle';
 import Form from './components/Form';
+import CartCheckout from './components/Cart/Cart';
 import CartSidebar from './components/Cart/CartSidebar';
-import CartCheckout from './components/Cart/CartCheckout';
 
 // Global CSS File
 import './theme.css';
@@ -30,7 +30,7 @@ class App extends Component {
 
             <Switch>
 
-              <Route exact path="/" render={(props) => (
+              <Route exact path="/" render={() => (
 
               <Fragment>
 
@@ -64,10 +64,10 @@ class App extends Component {
 
               )} />
             
-              <Route exact path="/cart" render={(props) => (
+              <Route exact path="/cart" render={() => (
                 
                 <Fragment>
-                  <PageTitle title="Cool Cart" />
+                  <PageTitle title="Thank You" />
                   <CartCheckout />
                 </Fragment>
 

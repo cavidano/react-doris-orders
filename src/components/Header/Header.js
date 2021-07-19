@@ -149,7 +149,7 @@ const Header = (props) => {
                                                 <Link className="text-reset" to="/cart">Cart</Link>
                                             </li>
                                             <li>
-                                                <Link className="text-reset" to="/checkout">Checkout</Link>
+                                                <Link className="text-reset" to="/confirm">Confirm</Link>
                                             </li>
                                             <li>
                                                 <button className="no-btn-style" type="button" title="Language"
