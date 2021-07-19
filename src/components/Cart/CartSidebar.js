@@ -16,6 +16,8 @@ const CartSidebar = () => {
 
             <div className="card-body fs-md">
 
+            {/* Ternary operator */}
+
             {cartEmpty ?
                 <ul className="list-group list-group-flush mx-n2" id="order-detail-aside">
                     <CartItem title="Birth Certificate" cost="18" />

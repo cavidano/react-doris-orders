@@ -63,7 +63,7 @@ const Header = (props) => {
 
                             <div className="col-auto">
                                 <p className="d-none d-md-flex fs-md">
-                                    <a className="text-reset" href="https://www1.nyc.gov/">
+                                    <a className="text-reset" href="https://www1.nyc.gov/" target="_blank">
                                         <strong>nyc.gov</strong>
                                     </a>
                                     <span className="mx-1" aria-hidden="true">|</span>
