@@ -1,6 +1,6 @@
 import React from 'react';
 
-const OrderItem = ({title, cost}) => {
+const CartItem = ({title, cost}) => {
     return (
         <li className="list-group-item bg-transparent d-flex justify-content-between">
             <span>
@@ -19,4 +19,4 @@ const OrderItem = ({title, cost}) => {
     );
 }
 
-export default OrderItem;
+export default CartItem;

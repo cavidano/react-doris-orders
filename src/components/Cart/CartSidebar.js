@@ -1,8 +1,8 @@
 import React from 'react';
 
-import OrderItem from './OrderItem';
+import CartItem from './CartItem';
 
-const OrderSidebar = () => {
+const CartSidebar = () => {
     return (
         <div className="card bg-light rounded overflow-hidden">
 
@@ -19,9 +19,9 @@ const OrderSidebar = () => {
                 
                 <ul className="list-group list-group-flush mx-n2" id="order-detail-aside">
                     
-                    <OrderItem title="Birth Certificate" cost="18" />
-                    <OrderItem title="Marriage Certificate" cost="24" />
-                    <OrderItem title="Cool, Carl" cost="16" />
+                    <CartItem title="Birth Certificate" cost="18" />
+                    <CartItem title="Marriage Certificate" cost="24" />
+                    <CartItem title="Cool, Carl" cost="16" />
                         
                 </ul>
 
@@ -40,4 +40,4 @@ const OrderSidebar = () => {
     );
 }
 
-export default OrderSidebar;
+export default CartSidebar;

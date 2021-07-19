@@ -7,7 +7,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import PageTitle from './components/PageTitle';
 import Form from './components/Form';
-import OrderSidebar from './components/OrderDetails/OrderSidebar';
+import CartSidebar from './components/Cart/CartSidebar';
 
 // Global CSS File
 import './theme.css';
@@ -51,7 +51,7 @@ class App extends Component {
                             
                             <div className="sticky-top py-2">
 
-                                <OrderSidebar />
+                                <CartSidebar />
 
                             </div>
                             
