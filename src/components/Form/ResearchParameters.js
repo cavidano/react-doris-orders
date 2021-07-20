@@ -1,6 +1,7 @@
 import React from 'react';
 
 const ResearchParameters = () => {
+
     return (
 
         <div className="narrow my-5" id="research-parameters">

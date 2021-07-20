@@ -4,7 +4,7 @@ import CartItem from './CartItem';
 
 const CartSidebar = () => {
 
-    let cartEmpty = false;
+    let cartEmpty = true;
 
     return (
         <div className="card bg-light rounded overflow-hidden">
@@ -19,14 +19,14 @@ const CartSidebar = () => {
             {/* Ternary operator */}
 
             {cartEmpty ?
+                <p className="card-text">
+                    Your cart is empty.
+                </p> :
                 <ul className="list-group list-group-flush mx-n2" id="order-detail-aside">
                     <CartItem title="Birth Certificate" cost="18" />
                     <CartItem title="Marriage Certificate" cost="24" />
                     <CartItem title="Cool, Carl" cost="16" />
-                </ul> :
-                <p className="card-text">
-                    Your cart is empty.
-                </p>
+                </ul>
             }
 
             </div>
