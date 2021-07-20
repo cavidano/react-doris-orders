@@ -36,35 +36,35 @@ const ResearchParameters = () => {
                     <li>
                         <div className="custom-control custom-checkbox">
                             <input type="checkbox" className="custom-control-input" id="additional-boroug-bronx" />
-                            <label className="custom-control-label" for="additional-boroug-bronx">Bronx</label>
+                            <label className="custom-control-label" htmlFor="additional-boroug-bronx">Bronx</label>
                         </div>
                     </li>
 
                     <li>
                         <div className="custom-control custom-control custom-checkbox">
                             <input type="checkbox" className="custom-control-input" id="additional-boroug-brooklyn" />
-                            <label className="custom-control-label" for="additional-boroug-brooklyn">Brooklyn</label>
+                            <label className="custom-control-label" htmlFor="additional-boroug-brooklyn">Brooklyn</label>
                         </div>
                     </li>
 
                     <li>
                         <div className="custom-control custom-control custom-checkbox">
                             <input type="checkbox" className="custom-control-input" id="additional-boroug-manhattan" />
-                            <label className="custom-control-label" for="additional-boroug-manhattan">Manhattan</label>
+                            <label className="custom-control-label" htmlFor="additional-boroug-manhattan">Manhattan</label>
                         </div>
                     </li>
 
                     <li>
                         <div className="custom-control custom-control custom-checkbox">
                             <input type="checkbox" className="custom-control-input" id="additional-boroug-staten-island" />
-                            <label className="custom-control-label" for="additional-boroug-staten-island">Staten Island</label>
+                            <label className="custom-control-label" htmlFor="additional-boroug-staten-island">Staten Island</label>
                         </div>
                     </li>
 
                     <li>
                         <div className="custom-control custom-control custom-checkbox">
                             <input type="checkbox" className="custom-control-input" id="additional-boroug-queens" />
-                            <label className="custom-control-label" for="additional-boroug-queens">Queens</label>
+                            <label className="custom-control-label" htmlFor="additional-boroug-queens">Queens</label>
                         </div>
                     </li>                    
                     

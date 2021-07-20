@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import PageTitle from './components/PageTitle/PageTitle';
-import Form from './components/Form';
+import Form from './components/Form/Form';
 import Cart from './components/Cart/Cart';
 import CartSidebar from './components/Cart/CartSidebar';
 import CartConfirm from './components/Cart/CartConfirm';
@@ -16,7 +16,17 @@ import './theme.css';
 
 class App extends Component {
 
+  state = {
+    recordType: null
+  }
+
   // async componentDidMount() {}
+
+  setRecordType = () => {
+    this.setState({
+      recordType: 'cool'
+    })
+  }
 
   render(){
     
@@ -33,35 +43,35 @@ class App extends Component {
 
               <Route exact path="/" render={() => (
 
-              <Fragment>
+                <Fragment>
 
-                <PageTitle title="Order Vital Records" />
+                  <PageTitle title="Order Vital Records" />
 
-                <div className="container-fluid wide">
+                  <div className="container-fluid wide">
 
-                    <div className="row">
+                      <div className="row">
 
-                        <div className="col-lg-9 overflow-hidden" id="primary-content">
+                          <div className="col-lg-9 overflow-hidden" id="primary-content">
 
-                            <Form />
+                              <Form setAlert={this.setAlert} />
 
-                        </div>
-                            
-                        <div className="col-lg-3 border-left">
-                            
-                            <div className="sticky-top py-2">
+                          </div>
+                              
+                          <div className="col-lg-3 border-left">
+                              
+                              <div className="sticky-top py-2">
 
-                                <CartSidebar />
+                                  <CartSidebar />
 
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-              
-              </Fragment>
+                              </div>
+                              
+                          </div>
+                          
+                      </div>
+                      
+                  </div>
+                
+                </Fragment>
 
               )} />
             

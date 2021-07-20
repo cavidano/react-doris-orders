@@ -6,7 +6,7 @@ import ResearchParameters from './ResearchParameters';
 import ButtonSubmit from './ButtonSubmit';
 
 class Form extends Component {
-    
+
     render() {
 
         return (
@@ -22,7 +22,7 @@ class Form extends Component {
                     </p>
                 </div>
 
-                <BasicInfo />
+                <BasicInfo  />
 
                 <hr className="narrow border-dark" />
 

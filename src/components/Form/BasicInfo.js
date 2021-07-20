@@ -1,11 +1,6 @@
 import React from 'react';
 
-const BasicInfo = (_props) => {
-
-    const handleClick = (e) => {
-        e.preventDefault();
-        console.log('this is:', this);
-    }
+const BasicInfo = () => {
 
     return (
         <div className="narrow my-5" id="basic-information">
@@ -18,12 +13,6 @@ const BasicInfo = (_props) => {
                     Copies of vital records can be purchased from the NYC Municipal Archives for a fee of <strong>$18.00 each</strong>. Extra charges for research, letters of exemplification, and delivery method may apply.
                 </p>
 
-                <button
-                    className="btn btn-danger"
-                    onClick={handleClick}
-                    type="button"
-                >Whoa</button>
-                
             </div>
 
             <div className="form-group" aria-labelledby="select-record-type">
