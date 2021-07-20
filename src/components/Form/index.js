@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import BasicInfo from './BasicInfo';
+import ResearchParameters from './ResearchParameters';
 
 import ButtonSubmit from './ButtonSubmit';
 
@@ -22,6 +23,10 @@ class Form extends Component {
                 </div>
 
                 <BasicInfo />
+
+                <hr className="narrow border-dark" />
+
+                <ResearchParameters />
                 
                 <ButtonSubmit disabled="false" />
 

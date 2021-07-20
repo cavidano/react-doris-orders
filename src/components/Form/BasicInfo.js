@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BasicInfo = (props) => {
+const BasicInfo = (_props) => {
     return (
         <div className="narrow my-5" id="basic-information">
 
