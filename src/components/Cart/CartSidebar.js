@@ -4,7 +4,7 @@ import CartItem from './CartItem';
 
 const CartSidebar = () => {
 
-    let cartEmpty = true;
+    let cartEmpty = false;
 
     return (
         <div className="card bg-light rounded overflow-hidden">
