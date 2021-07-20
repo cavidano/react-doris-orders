@@ -37,7 +37,7 @@ class App extends Component {
 
           <Header agencyName="Department of Records" />
         
-          <main id="skip-header-content">
+          <main className="height-100vh" id="skip-header-content">
 
             <Switch>
 
