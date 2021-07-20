@@ -63,7 +63,7 @@ const Header = (props) => {
 
                             <div className="col-auto">
                                 <p className="d-none d-md-flex fs-md">
-                                    <a className="text-reset" href="https://www1.nyc.gov/" target="_blank">
+                                    <a className="text-reset" href="https://www1.nyc.gov/" target="_blank" rel="noopener noreferrer">
                                         <strong>nyc.gov</strong>
                                     </a>
                                     <span className="mx-1" aria-hidden="true">|</span>
@@ -75,14 +75,20 @@ const Header = (props) => {
 
                                 <ul className="extensible-list horizontal fs-md">
                                     <li>
-                                        <a className="text-reset" href="https://portal.311.nyc.gov/" target="_blank">
+                                        <a
+                                            className="text-reset"
+                                            href="https://portal.311.nyc.gov/"
+                                            target="_blank" rel="noopener noreferrer">
                                             <strong>
                                                 311
                                             </strong>
                                         </a>
                                     </li>
                                     <li>
-                                        <a className="text-reset" href="http://www1.nyc.gov/home/search/index.page" target="_blank">
+                                        <a
+                                        className="text-reset"
+                                        href="http://www1.nyc.gov/home/search/index.page"
+                                        target="_blank" rel="noopener noreferrer">
                                             <strong>
                                                 Search all NYC.gov
                                             </strong>
