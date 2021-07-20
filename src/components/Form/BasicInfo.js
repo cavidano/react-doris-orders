@@ -1,6 +1,12 @@
 import React from 'react';
 
 const BasicInfo = (_props) => {
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        console.log('this is:', this);
+    }
+
     return (
         <div className="narrow my-5" id="basic-information">
 
@@ -11,6 +17,12 @@ const BasicInfo = (_props) => {
                 <p>
                     Copies of vital records can be purchased from the NYC Municipal Archives for a fee of <strong>$18.00 each</strong>. Extra charges for research, letters of exemplification, and delivery method may apply.
                 </p>
+
+                <button
+                    className="btn btn-danger"
+                    onClick={handleClick}
+                    type="button"
+                >Whoa</button>
                 
             </div>
 
@@ -90,14 +102,26 @@ const BasicInfo = (_props) => {
                 <ul className="extensible-list my-1">
                     <li>
                         <div className="custom-control custom-radio">
-                            <input type="radio" className="custom-control-input" id="certificate-number-yes" name="know-certification-number" required />
+                            <input
+                                className="custom-control-input"
+                                type="radio"
+                                id="certificate-number-yes"
+                                name="know-certification-number"
+                                required
+                            />
                             <label className="custom-control-label" htmlFor="certificate-number-yes">Yes</label>
                         </div>
                     </li>
                     
                     <li>
                         <div className="custom-control custom-radio">
-                            <input type="radio" className="custom-control-input" id="certificate-number-no" name="know-certification-number" required />
+                            <input
+                                className="custom-control-input"
+                                type="radio"
+                                id="certificate-number-no"
+                                name="know-certification-number"
+                                required
+                            />
                             <label className="custom-control-label" htmlFor="certificate-number-no">
                                 No
                                 <span className="help-text">

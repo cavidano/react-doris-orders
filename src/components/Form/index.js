@@ -6,7 +6,7 @@ import ResearchParameters from './ResearchParameters';
 import ButtonSubmit from './ButtonSubmit';
 
 class Form extends Component {
-
+    
     render() {
 
         return (
