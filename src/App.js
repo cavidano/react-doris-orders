@@ -20,8 +20,6 @@ class App extends Component {
     recordType: null
   }
 
-  // async componentDidMount() {}
-
   setRecordType = () => {
     this.setState({
       recordType: 'cool'
