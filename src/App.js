@@ -1,4 +1,4 @@
-import React, { Component, Fragment, useState } from 'react';
+import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Components
@@ -17,11 +17,11 @@ import './theme.css';
 
 const App = () => {
 
-  const [recordType, setRecordType] = useState('Test');
+  // Create State (Functional)
 
-  const getRecordType = () => {
-    setRecordType('cool');
-  }
+  // const getRecordType = () => {
+  //   setRecordType('cool');
+  // }
     
   return (
     

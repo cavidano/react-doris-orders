@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const BasicInfo = () => {
+
+    const [recordType, setRecordType] = useState('No Record');
+
+    const onChange = (e) => {
+      setRecordType(e.target.value);
+
+      console.log(`Record Type = ${recordType}`)
+    } 
 
     return (
         <div className="narrow my-5" id="basic-information">
@@ -8,6 +16,10 @@ const BasicInfo = () => {
             <div className="introduction my-4">
                             
                 <h2>Basic Information</h2>
+
+                <p>
+                    Type of  Record: {recordType}
+                </p>
 
                 <p>
                     Certified copies of vital records can be purchased for a fee of <strong>$18.00</strong> when certificate number is known. Extra charges for research, letters of exemplification, and delivery method may apply. 
@@ -31,21 +43,44 @@ const BasicInfo = () => {
                 <ul className="extensible-list">
                     <li>
                         <div className="custom-control custom-radio">
-                            <input type="radio" className="custom-control-input" id="birth-certificate" name="type-of-record" required />
+                            <input
+                                type="radio"
+                                className="custom-control-input"
+                                id="birth-certificate"
+                                name="type-of-record"
+                                value="Birth Certificate"
+                                onChange={onChange}
+                                required 
+                            />
                             <label className="custom-control-label" htmlFor="birth-certificate">Birth Certificate</label>
                         </div>
                     </li>
                     
                     <li>
                         <div className="custom-control custom-radio">
-                            <input type="radio" className="custom-control-input" id="death-certificate" name="type-of-record" required />
+                            <input
+                                type="radio"
+                                className="custom-control-input"
+                                id="death-certificate"
+                                name="type-of-record"
+                                value="Death Certificate"
+                                onChange={onChange}
+                                required
+                            />
                             <label className="custom-control-label" htmlFor="death-certificate">Death Certificate</label>
                         </div>
                     </li>
                     
                     <li>
                         <div className="custom-control custom-radio">
-                            <input type="radio" className="custom-control-input" id="marriage-certificate" name="type-of-record" required />
+                            <input
+                                type="radio" className="custom-control-input"
+                                id="marriage-certificate"
+                                name="type-of-record"
+                                value="Marriage Certificate"
+                                onChange={onChange}
+                                required
+                            />
                             <label className="custom-control-label" htmlFor="marriage-certificate">Marriage Certificate</label>
                         </div>
                     </li>
@@ -77,7 +112,9 @@ const BasicInfo = () => {
                 </ul>
                 
             </div>
-                        
+            
+            {/*        
+            
             <div className="form-group">
 
                 <label className="label" htmlFor="certificate-number">
@@ -96,6 +133,7 @@ const BasicInfo = () => {
                                 type="radio"
                                 id="certificate-number-yes"
                                 name="know-certification-number"
+
                                 required
                             />
                             <label className="custom-control-label" htmlFor="certificate-number-yes">Yes</label>
@@ -268,6 +306,7 @@ const BasicInfo = () => {
                 
             </div>
 
+                */} 
         </div>
     );
 }

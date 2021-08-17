@@ -23,7 +23,9 @@ class Form extends Component {
                     </p>
                 </div>
 
-                <BasicInfo  />
+                <BasicInfo />
+
+                {/* 
 
                 <hr className="narrow border-dark" />
 
@@ -32,6 +34,8 @@ class Form extends Component {
                 <OrderDetails />
                 
                 <ButtonSubmit disabled="false" />
+*/}
+
 
             </form>
         )
