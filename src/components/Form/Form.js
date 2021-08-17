@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import BasicInfo from './BasicInfo';
 import ResearchParameters from './ResearchParameters';
+import OrderDetails from './OrderDetails';
 
 import ButtonSubmit from './ButtonSubmit';
 
@@ -27,6 +28,8 @@ class Form extends Component {
                 <hr className="narrow border-dark" />
 
                 <ResearchParameters />
+
+                <OrderDetails />
                 
                 <ButtonSubmit disabled="false" />
 

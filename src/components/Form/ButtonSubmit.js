@@ -6,7 +6,7 @@ const submitOrder = (e) => {
     console.log('Order Submitted');
 }
 
-const ButtonSubmit = (props) => {
+const ButtonSubmit = () => {
     return (
         <div className="narrow my-5">
             <button
