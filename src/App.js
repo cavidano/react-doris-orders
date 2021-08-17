@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component, Fragment, useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Components
@@ -12,21 +12,16 @@ import CartSidebar from './components/Cart/CartSidebar';
 import CartConfirm from './components/Cart/CartConfirm';
 
 // Global CSS File
+
 import './theme.css';
 
-class App extends Component {
+const App = () => {
 
-  state = {
-    recordType: null
+  const [recordType, setRecordType] = useState('Test');
+
+  const getRecordType = () => {
+    setRecordType('cool');
   }
-
-  setRecordType = () => {
-    this.setState({
-      recordType: 'cool'
-    })
-  }
-
-  render(){
     
     return (
       <Router>
@@ -51,7 +46,7 @@ class App extends Component {
 
                           <div className="col-lg-9 overflow-hidden" id="primary-content">
 
-                              <Form setAlert={this.setAlert} />
+                              <Form />
 
                           </div>
                               
@@ -100,8 +95,6 @@ class App extends Component {
         </div>
     
       </Router>);
-  
-  };
 
 }
 

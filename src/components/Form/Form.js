@@ -11,7 +11,7 @@ class Form extends Component {
 
         return (
 
-            <form className="needs-validation" action="" noValidate>
+            <form className="needs-validation" noValidate>
 
                 <div className="text-right py-1 border-bottom my-2 narrow text-right">
                     <p>

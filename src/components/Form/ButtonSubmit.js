@@ -2,7 +2,8 @@ import React from 'react';
 
 const submitOrder = (e) => {
     e.preventDefault();
-    alert('Whoa!!!!!');
+
+    console.log('Order Submitted');
 }
 
 const ButtonSubmit = (props) => {
