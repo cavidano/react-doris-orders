@@ -1,14 +1,22 @@
-import React, { Component } from 'react';
+import React, { useEffect, useContext } from 'react';
 
 import BasicInfo from './BasicInfo';
+
 import ResearchParameters from './ResearchParameters';
 import OrderDetails from './OrderDetails';
 
 import ButtonSubmit from './ButtonSubmit';
 
-class Form extends Component {
+// Context
 
-    render() {
+import CartContext from '../../context/cart/cartContext';
+
+const Form = () => {
+
+    // Initialize Context
+    const cartContext = useContext(CartContext);
+
+    const { cart } = cartContext;
 
         return (
 
@@ -22,6 +30,8 @@ class Form extends Component {
                         </span>
                     </p>
                 </div>
+
+                <p>hello?</p>
 
                 <BasicInfo />
 
@@ -39,7 +49,6 @@ class Form extends Component {
 
             </form>
         )
-    }
 }
 
 export default Form;

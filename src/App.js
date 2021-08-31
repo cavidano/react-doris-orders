@@ -11,20 +11,20 @@ import Cart from './components/Cart/Cart';
 import CartSidebar from './components/Cart/CartSidebar';
 import CartConfirm from './components/Cart/CartConfirm';
 
+// State 
+
+import CartState from './context/cart/CartState';
+
 // Global CSS File
 
 import './theme.css';
 
 const App = () => {
 
-  // Create State (Functional)
-
-  // const getRecordType = () => {
-  //   setRecordType('cool');
-  // }
-    
   return (
-    
+
+    <CartState>
+
     <Router>
         
       <div className="App">
@@ -95,7 +95,9 @@ const App = () => {
         
       </div>
     
-    </Router>);
+    </Router>
+    </CartState>
+    );
 
 }
 

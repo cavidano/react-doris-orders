@@ -1,13 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+
+// Context
+
+import CartContext from '../../context/cart/cartContext';
 
 const BasicInfo = () => {
 
     const [recordType, setRecordType] = useState('No Record');
 
-    const onChange = (e) => {
-      setRecordType(e.target.value);
+    const cartContext = useContext(CartContext);
 
-      console.log(`Record Type = ${recordType}`)
+    const { cart, updateCart } = cartContext;
+
+    // Replaces component did mount
+    
+    useEffect(() => {
+        // eslint-disable-next-line
+    }, []);
+
+    const onChange = (e) => {
+        updateCart(['cool']);
+      setRecordType(e.target.value);
     } 
 
     return (
@@ -17,6 +30,9 @@ const BasicInfo = () => {
                             
                 <h2>Basic Information</h2>
 
+                <p>
+                    Cart Items: {cart}
+                </p>
                 <p>
                     Type of  Record: {recordType}
                 </p>
