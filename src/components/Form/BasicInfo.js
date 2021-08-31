@@ -15,12 +15,13 @@ const BasicInfo = () => {
     // Replaces component did mount
     
     useEffect(() => {
+
         // eslint-disable-next-line
-    }, []);
+    }, [cart]);
 
     const onChange = (e) => {
         updateCart(['cool']);
-      setRecordType(e.target.value);
+        setRecordType(e.target.value);
     } 
 
     return (
