@@ -6,7 +6,6 @@ import CartReducer from './cartReducer';
 import {
     GET_CART
 } from '../types';
-
  
 const CartState = (props) => {
 
@@ -18,7 +17,7 @@ const CartState = (props) => {
 
     const updateCart = (items) => {
 
-        console.log(`My Cart Items`);
+        console.log(`My Cart Items = ${items}`);
 
         dispatch({ 
             type: GET_CART,

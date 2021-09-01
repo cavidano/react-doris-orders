@@ -16,11 +16,14 @@ const BasicInfo = () => {
     
     useEffect(() => {
 
+            console.log('Use Effect Ran');
+        
+
         // eslint-disable-next-line
-    }, [cart]);
+    }, []);
 
     const onChange = (e) => {
-        updateCart(['cool']);
+        updateCart([e.target.value]);
         setRecordType(e.target.value);
     } 
 
