@@ -1,23 +1,18 @@
 import React, { useContext } from 'react';
 
+// Components
 import BasicInfo from './BasicInfo';
 
-import ResearchParameters from './ResearchParameters';
-import OrderDetails from './OrderDetails';
+// import ResearchParameters from './ResearchParameters';
+// import OrderDetails from './OrderDetails';
 
-import ButtonSubmit from './ButtonSubmit';
+// import ButtonSubmit from './ButtonSubmit';
 
 // Context
 
-import CartContext from '../../context/cart/cartContext';
 
 const Form = () => {
-
-    // Initialize Context
-    const cartContext = useContext(CartContext);
-
-    const { cart } = cartContext;
-
+    
     return (
 
         <form className="needs-validation" noValidate>

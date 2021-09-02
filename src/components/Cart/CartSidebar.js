@@ -1,4 +1,4 @@
-import React, { Fragment, useContext, useEffect, useState } from 'react';
+import React, {useContext, useEffect, useState } from 'react';
 
 import CartItem from './CartItem';
 
@@ -37,10 +37,10 @@ const CartSidebar = () => {
             <div className="card-body fs-md">
 
                 {cartDis === '' ? (
-                    <p>Your Cart is empty.</p>
+                    <p>Your cart is empty.</p>
                 ) : (
                     <ul className="list-group list-group-flush mx-n2" id="order-detail-aside">
-                        <CartItem title={cartDis} cost="18" />
+                        <CartItem title={cartDis} cost="25" />
                     </ul>
                 )}
 

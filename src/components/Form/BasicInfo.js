@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useEffect, useContext } from 'react';
 
 // Context
 
@@ -6,25 +6,20 @@ import CartContext from '../../context/cart/cartContext';
 
 const BasicInfo = () => {
 
-    const [recordType, setRecordType] = useState('No Record');
-
     const cartContext = useContext(CartContext);
 
-    const { cart, updateCart } = cartContext;
+    const { updateCart } = cartContext;
 
     // Replaces component did mount
     
     useEffect(() => {
-
-            console.log('Use Effect Ran');
-        
+        console.log('Use Effect Ran');
 
         // eslint-disable-next-line
     }, []);
 
     const onChange = (e) => {
         updateCart([e.target.value]);
-        setRecordType(e.target.value);
     } 
 
     return (
@@ -33,13 +28,6 @@ const BasicInfo = () => {
             <div className="introduction my-4">
                             
                 <h2>Basic Information</h2>
-
-                <p>
-                    Cart Items: {cart}
-                </p>
-                <p>
-                    Type of  Record: {recordType}
-                </p>
 
                 <p>
                     Certified copies of vital records can be purchased for a fee of <strong>$18.00</strong> when certificate number is known. Extra charges for research, letters of exemplification, and delivery method may apply. 
