@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 // Components
 import BasicInfo from './BasicInfo';
 
-// import ResearchParameters from './ResearchParameters';
+import ResearchParameters from './ResearchParameters';
 // import OrderDetails from './OrderDetails';
 
 // import ButtonSubmit from './ButtonSubmit';
@@ -28,11 +28,12 @@ const Form = () => {
 
             <BasicInfo />
 
+            <ResearchParameters />
+            
             {/* 
 
             <hr className="narrow border-dark" />
 
-            <ResearchParameters />
 
             <OrderDetails />
             
