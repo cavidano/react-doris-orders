@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { Fragment, useContext, useEffect, useState } from 'react';
 
 import CartItem from './CartItem';
 
@@ -13,35 +13,15 @@ const CartSidebar = () => {
 
     const { cart } = cartContext;
 
-    let cardContent;
+    // use State
+
+    const [cartDis, setCartDis] = useState('');
 
     useEffect(() => {
-        console.log(`Whoa ${cart}`);
-        
 
-        const initCardBody = () => {
-
-            if(cart === []) {
-                
-                return (
-                    <p className="card-text">
-                    Your cart is empty.
-                    </p> 
-                );
-                
-            } else {
-                return (
-                    <p className="card-text">
-                        {cart}
-                    </p> 
-                );
-
-            }
-
-        };
-
-            // cardContent = `  `
-          
+        if(cart.length){
+            setCartDis(cart);  
+        } 
 
         // eslint-disable-next-line
     }, [cart]);
@@ -56,11 +36,13 @@ const CartSidebar = () => {
 
             <div className="card-body fs-md">
 
-            {cart === [] ? (
-                <p>cool</p>
-            ) : (
-                <p>not cool</p>
-            )}
+                {cartDis === '' ? (
+                    <p>Your Cart is empty.</p>
+                ) : (
+                    <ul className="list-group list-group-flush mx-n2" id="order-detail-aside">
+                        <CartItem title={cartDis} cost="18" />
+                    </ul>
+                )}
 
             </div>
 
