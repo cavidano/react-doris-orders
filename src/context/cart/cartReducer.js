@@ -12,8 +12,6 @@ export default (state, action) => {
             return {
                 ...state,
                 cart: action.payload,
-                // users: action.payload,
-                // loading: false
             }
         default: 
         return state
