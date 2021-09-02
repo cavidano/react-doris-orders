@@ -17,9 +17,34 @@ const CartSidebar = () => {
 
     useEffect(() => {
         console.log(`Whoa ${cart}`);
+        
+
+        const initCardBody = () => {
+
+            if(cart === []) {
+                
+                return (
+                    <p className="card-text">
+                    Your cart is empty.
+                    </p> 
+                );
+                
+            } else {
+                return (
+                    <p className="card-text">
+                        {cart}
+                    </p> 
+                );
+
+            }
+
+        };
+
+            // cardContent = `  `
+          
 
         // eslint-disable-next-line
-    }, []);
+    }, [cart]);
 
     return (
         <div className="card bg-light rounded overflow-hidden">
@@ -31,9 +56,11 @@ const CartSidebar = () => {
 
             <div className="card-body fs-md">
 
-            <p className="card-text">
-            Your cart is empty. {cart}
-            </p> 
+            {cart === [] ? (
+                <p>cool</p>
+            ) : (
+                <p>not cool</p>
+            )}
 
             </div>
 
