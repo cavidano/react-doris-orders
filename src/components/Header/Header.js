@@ -124,11 +124,11 @@ const Header = (props) => {
 
                                 <div className="d-flex justify-content-center justify-content-lg-start">
 
-                                    <a className="align-self-center" href="/" title="Home">
+                                    <NavLink className="align-self-center" to="/" title="Home">
 
                                         {logo}
 
-                                    </a>
+                                    </NavLink>
 
                                 </div>
 
