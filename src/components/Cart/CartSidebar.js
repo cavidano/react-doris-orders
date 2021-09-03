@@ -11,17 +11,19 @@ const CartSidebar = () => {
     // Context
 
     const cartContext = useContext(CartContext);
-    const { cart } = cartContext;
+    const { record } = cartContext;
 
     // State
 
     const [orderDetails, setOrderDetails] = useState('');
 
+    // Effect
     useEffect(() => {
-        if(cart.length){
-            setOrderDetails(cart);  
+        console.log(`What's the Record Type? It's ${record}`);
+        if(record !== null){
+            setOrderDetails(record);  
         } 
-    }, [cart]);
+    }, [record]);
 
     return (
         <div className="card bg-light rounded overflow-hidden">
@@ -40,7 +42,7 @@ const CartSidebar = () => {
                             <span>Your cart is empty.</span>
                         </li>
                     ) : (
-                        <CartItem title={orderDetails} cost="25" />
+                        <CartItem title={record} cost="25" />
                     )}
 
                 </ul>

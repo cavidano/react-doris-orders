@@ -1,6 +1,7 @@
 // Types
 
 import {
+    RECORD_TYPE,
     GET_CART
 } from '../types';
 
@@ -8,6 +9,11 @@ import {
 
 export default (state, action) => {
     switch(action.type){
+        case RECORD_TYPE:
+            return {
+                ...state,
+                record: action.payload,
+            }
         case GET_CART:
             return {
                 ...state,

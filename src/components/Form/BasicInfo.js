@@ -8,10 +8,10 @@ const BasicInfo = () => {
 
     const cartContext = useContext(CartContext);
 
-    const { updateCart } = cartContext;
+    const { selectRecordType } = cartContext;
     
     const onChange = (e) => {
-        updateCart([e.target.value]);
+        selectRecordType([e.target.value]);
     } 
 
     return (

@@ -1,6 +1,6 @@
 import { createContext } from 'react';
 
-// Intitialize Conyext
+// Intitialize Context
 
 const cartContext = createContext();
 

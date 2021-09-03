@@ -3,18 +3,27 @@ import CartContext from './cartContext';
 import CartReducer from './cartReducer';
 
 import {
-    GET_CART
+    GET_CART,
+    RECORD_TYPE
 } from '../types';
  
 const CartState = (props) => {
 
     const initialState = {
-        cart: [
-            
-        ]
+        record: null,
+        cart: []
     }
 
     const [state, dispatch] = useReducer(CartReducer, initialState);
+
+    const selectRecordType = (record) => {
+
+        dispatch({ 
+            type: RECORD_TYPE,
+            payload: record
+        });
+
+    }
 
     const updateCart = (items) => {
 
@@ -27,7 +36,9 @@ const CartState = (props) => {
     return (
         <CartContext.Provider
             value={{
+                record: state.record,
                 cart: state.cart,
+                selectRecordType,
                 updateCart
             }}>
             {props.children}

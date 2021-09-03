@@ -3,7 +3,7 @@ import React from 'react';
 const CartItem = ({title, cost}) => {
     return (
         <li className="list-group-item bg-transparent d-flex justify-content-between">
-            <span >
+            <span>
                 {title}
             </span>
             <span>
