@@ -17,11 +17,14 @@ const CartSidebar = () => {
 
     const [orderDetails, setOrderDetails] = useState('');
 
+    const [subTotal, setSubtotal] = useState('0');
+
     // Effect
     useEffect(() => {
         console.log(`What's the Record Type? It's ${record}`);
         if(record !== null){
-            setOrderDetails(record);  
+            setOrderDetails(record);
+            setSubtotal(25.00)
         } 
     }, [record]);
 
@@ -54,7 +57,7 @@ const CartSidebar = () => {
                     Subtotal:
                 </span>
                 <span>
-                    $0.00
+                    ${subTotal}.00
                 </span>   
             </div>
 
