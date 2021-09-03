@@ -9,14 +9,14 @@ import {
 const CartState = (props) => {
 
     const initialState = {
-        cart: []
+        cart: [
+            
+        ]
     }
 
     const [state, dispatch] = useReducer(CartReducer, initialState);
 
     const updateCart = (items) => {
-
-        console.log(`My Cart Items = ${items}`);
 
         dispatch({ 
             type: GET_CART,

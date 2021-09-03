@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useContext } from 'react';
 
 // Context
 
@@ -9,15 +9,7 @@ const BasicInfo = () => {
     const cartContext = useContext(CartContext);
 
     const { updateCart } = cartContext;
-
-    // Replaces component did mount
     
-    useEffect(() => {
-        console.log('Use Effect Ran');
-
-        // eslint-disable-next-line
-    }, []);
-
     const onChange = (e) => {
         updateCart([e.target.value]);
     } 
