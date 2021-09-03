@@ -1,15 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
 // Components
 import BasicInfo from './BasicInfo';
-
 import ResearchParameters from './ResearchParameters';
 // import OrderDetails from './OrderDetails';
-
 // import ButtonSubmit from './ButtonSubmit';
-
-// Context
-
 
 const Form = () => {
     
