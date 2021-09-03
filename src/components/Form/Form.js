@@ -3,8 +3,8 @@ import React from 'react';
 // Components
 import BasicInfo from './BasicInfo';
 import ResearchParameters from './ResearchParameters';
-// import OrderDetails from './OrderDetails';
-// import ButtonSubmit from './ButtonSubmit';
+import OrderDetails from './OrderDetails';
+import ButtonSubmit from './ButtonSubmit';
 
 const Form = () => {
     
@@ -25,7 +25,7 @@ const Form = () => {
 
             <ResearchParameters />
             
-            {/* 
+             
 
             <hr className="narrow border-dark" />
 
@@ -34,7 +34,7 @@ const Form = () => {
             
             <ButtonSubmit disabled="false" />
             
-            */}
+            {/**/}
 
         </form>
     )
