@@ -11,6 +11,7 @@ const CartState = (props) => {
 
     const initialState = {
         record: null,
+        additionalBoroughs: [],
         cart: []
     }
 
@@ -24,6 +25,15 @@ const CartState = (props) => {
         });
 
     }
+
+    // const additionalBoroughs = (borough) => {
+
+    //     dispatch({ 
+    //         type: RECORD_TYPE,
+    //         payload: myArray
+    //     });
+
+    // }
 
     const updateCart = (items) => {
 
