@@ -25,8 +25,6 @@ const Form = () => {
 
             <ResearchParameters />
             
-             
-
             <hr className="narrow border-dark" />
 
 
