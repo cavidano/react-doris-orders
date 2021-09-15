@@ -18,13 +18,10 @@ const BasicInfo = () => {
         <div className="narrow my-5" id="basic-information">
 
             <div className="introduction my-4">
-                            
                 <h2>Basic Information</h2>
-
                 <p>
                     Certified copies of vital records can be purchased for a fee of <strong>$18.00</strong> when certificate number is known. Extra charges for research, letters of exemplification, and delivery method may apply. 
                 </p>
-
             </div>
 
             <div className="form-group" aria-labelledby="select-record-type">
